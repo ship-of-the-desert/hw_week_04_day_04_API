@@ -5,14 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>API Practice</title>
 </head>
 
 <body>
-    <div class="container"></div>
-    <button id="random">Get Info</button>
+
+                <h1>Please select a movie to see its details</h1>
+                <fieldset>
+                <select id = "selBreed" >
+                </select>
+                <button id="best">Get The Best Movie/s</button>
+                <button id="random">Get Random Movie !</button>
+                </fieldset>
+       
+    <div id="box" style="height: 100%; width: 100%">
+        <h2>Movie info</h2>
+    </div>
+
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
 </body>
 
 </html>
+
