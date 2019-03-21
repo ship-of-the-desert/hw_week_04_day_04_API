@@ -7,14 +7,14 @@
 
 axios({
     method: 'GET',
-    url: `https://rickandmortyapi.com/api/character/2`
+    url: `https://rickandmortyapi.com/api/character/5`
 
 })
 .then( response => {
     
    let $imags = $('.img1');
-   $imags.attr('src', response.data);
-   var rick = await getCharacter(2);
+   $imags.attr('src', response.data.image);
+  
    })
 
 //
