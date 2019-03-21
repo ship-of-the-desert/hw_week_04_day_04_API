@@ -18,11 +18,21 @@ function getCharacter() {
         url: 'https://rickandmortyapi.com/api/character'
     })
         .then(response => {
-            var list = response.data.results
-            for (i =1; i<=5; i++){
-                console.log(list[i].name)
-                console.log(list[i].image)
-            }
+            var lists = response.data.results
+            var sel = $(".ricknmorty")
+            // for (i =1; i<=5; i++){
+                lists.forEach((list, index )=> {
+                    // console.log(list[i].name)
+                    // console.log(list[i].image)
+                    if(index < 5){
+                        sel.append(`<h3> ${list.name} </h3><img src="${list.image}" />`)
+
+                    }
+                   
+                });
+                
+
+            // }
         
             console.log();
 
